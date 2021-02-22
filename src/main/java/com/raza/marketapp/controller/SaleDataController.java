@@ -33,6 +33,8 @@ public class SaleDataController {
 		ArrayList<String> output = new ArrayList<String>();
 
 		output.add("Market Maker Service\n====================================================<br><br>");
+		output.add("<input type='text' id='buy' value='Buy'></input><input type='text' id='sell' value='Sell'></input><button>Submit</button><br>");
+
 		output.add("Ticker Tesla\n====================================================<br>");
 
 		output.add("<style>\ntable { border-collapse: collapse; width: 100%; border: 1px solid black; background: #ddd; table-layout: fixed; }</style>");
