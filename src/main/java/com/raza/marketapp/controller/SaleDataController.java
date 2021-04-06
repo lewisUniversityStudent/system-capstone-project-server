@@ -47,7 +47,7 @@ public class SaleDataController {
 		String out;
 		try
 		{
-			out = sendGET("http://34.107.49.226/api/get_sale_data");
+			out = sendGET("http://172.105.157.61:4444/api/get_sale_data");
 		}
 		catch (IOException e)
 		{
