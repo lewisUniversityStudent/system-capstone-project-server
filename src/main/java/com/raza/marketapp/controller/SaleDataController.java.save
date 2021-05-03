@@ -23,16 +23,16 @@ import com.google.gson.reflect.TypeToken;
 import com.raza.marketapp.model.*;
 
 @RestController
-//@RequestMapping("api")
+@RequestMapping("api")
 public class SaleDataController {
 	private static final String USER_AGENT = "Mozilla/5.0";
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/get_sale_data", method = RequestMethod.GET)
 	public String get_sale_data() {
 
 		ArrayList<String> output = new ArrayList<String>();
 
-                output.add("<html><head><link href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet'></head><body><header><nav class='navbar navbar-expand-md navbar-dark fixed-top bg-dark'><a class='navbar-brand' href='/'>Trading site</a><div class='navbarCollapse' id='navbarCollapse'><ul class='navbar-nav mr-auto'><li class='nav-item active'><a href='/' class='nav-link'>Home</a></li><li class='nav-item'><a class='nav-link' href='/register'>Register</a></li><li class='nav-item'><a class='nav-link' href='/login'>Login</a></li></ul></div></nav></header>");
+                output.add("<html><head><link href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' rel='stylesheet'></head><body><header><nav class='navbar navbar-expand-md navbar-dark fixed-top bg-dark'><a class='navbar-brand' href='#'>Trading site</a><div class='navbarCollapse' id='navbarCollapse'><ul class='navbar-nav mr-auto'><li class='nav-item active'><a href='#' class='nav-link'>Home</a></li><li class='nav-item'><a class='nav-link' href='/login'>Login</a></li><li class='nav-item'><a class='nav-link' href='/register'>Register</a></li></ul></div></nav></header>");
 		output.add("Market Maker Service\n====================================================<br><br>");
 		output.add("<div class='input-group mb-3'><input class='form-control mr-sm-2' type='text' id='buy' value='Buy'></input><input class='form-control mr-sm-2' type='text' id='sell' value='Sell'></input><button class='btn btn-outline-success my-2 my-sm-0'>Submit</button></div><br>");
 
